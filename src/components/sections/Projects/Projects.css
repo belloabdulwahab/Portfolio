@@ -1,0 +1,75 @@
+.projects{
+    background: #0a1510;
+    padding:7rem 0;
+}
+
+.section-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-eyebrow span {
+    width: 46px;
+    height: 1px;
+    background: var(--color-accent);
+}
+
+.section-eyebrow p {
+    color: var(--color-accent);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.section-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:end;
+
+    margin-bottom:3rem;
+} 
+
+.projects h2 {
+    max-width: 620px;
+    margin: 0;
+}
+
+.projects h2 span {
+    color: var(--color-accent);
+}
+
+.projects-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:2rem;
+}
+
+@media(max-width:900px){
+
+.section-header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:1rem;
+
+}
+
+.projects-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}

@@ -1,0 +1,178 @@
+.navbar{
+  position:fixed;
+  inset:0 0 auto 0;
+  z-index:1000;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  transition:.35s ease;
+}
+
+.navbar.scrolled{
+  background:rgba(5,11,8,.88);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--glass-border);
+}
+
+.navbar-container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  font-size:2rem;
+  font-family:"Poppins",sans-serif;
+  font-weight:700;
+  color: #fff;
+}
+
+.logo-badge{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #19C37D;
+  font-size: .9rem;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+  flex-shrink: 0;
+}
+
+.dot{
+  color: #19C37D;
+}
+
+.nav-links{
+  display:flex;
+  gap:3rem;
+}
+
+.nav-links a{
+  position:relative;
+  color: #c6cbc8;
+  font-weight: 500;
+  transition:var(--transition);
+}
+
+.nav-links a:hover{
+  color:var(--color-text);
+}
+
+.nav-links a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-5px;
+  width:0;
+  height:2px;
+  border-radius:999px;
+  background:var(--color-accent);
+  transition:.3s;
+}
+
+.nav-links a:hover::after{
+  width:100%;
+}
+
+.hire-btn{
+  background:#19C37D;
+  color:white;
+  height: 46px;
+  padding:0 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:15px;
+  font-weight:700;
+  transition:.3s ease;
+}
+
+.hire-btn:hover{
+  background: #1DD388;
+  transform:translateY(-2px);
+  box-shadow: 0 8px 24px rgba(25,195,125,.22);
+}
+
+.menu-btn{
+  display:none;
+  color:#fff;
+}
+
+.mobile-menu{
+  position:fixed;
+  top:0;
+  right:-100%;
+  width:320px;
+  max-width:85%;
+  height:100vh;
+  background:var(--color-surface);
+  backdrop-filter:blur(20px);
+  border-left:1px solid var(--glass-border);
+  padding:2rem;
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+  transition:.35s ease;
+  z-index:1002;
+}
+
+.mobile-menu.active{
+  right:0;
+}
+
+.mobile-menu a{
+  font-size:1.1rem;
+}
+
+.close-btn{
+  align-self:flex-end;
+  color:#fff;
+}
+
+.mobile-btn{
+  margin-top:1rem;
+  text-align:center;
+}
+
+.backdrop{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.55);
+  opacity:0;
+  visibility:hidden;
+  transition:.35s;
+  z-index:1001;
+}
+
+.backdrop.show{
+  opacity:1;
+  visibility:visible;
+}
+
+@media(max-width:900px){
+
+  .nav-links,
+  .hire-btn{
+    display:none;
+  } 
+
+  .menu-btn{
+    display:block;
+  }
+}
+
+@media(min-width:901px){
+
+  .mobile-menu,
+  .backdrop{
+    display:none;
+  }
+}

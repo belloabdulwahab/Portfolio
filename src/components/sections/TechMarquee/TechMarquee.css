@@ -1,0 +1,144 @@
+.tech-section{
+    overflow: hidden;
+}
+
+.tech-marquee-wrapper{
+    width:100%;
+    overflow:hidden;
+    padding:1rem 0;
+    background:linear-gradient(
+        180deg,
+        rgba(12,24,19,.96) 0%,
+        rgba(10,20,16,.98) 100%
+    );
+    border-top:1px solid rgba(255,255,255,.05);
+    border-bottom:1px solid rgba(255,255,255,.05);
+    position:relative;
+}
+
+.marquee{
+    position: relative;
+    overflow:hidden;
+    margin:1rem 0;
+}
+
+.marquee::before,
+.marquee::after{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    bottom:0;
+
+    width:120px;
+
+    z-index:5;
+
+    pointer-events:none;
+}
+
+.marquee::before{
+    left:0;
+
+    background:linear-gradient(
+        to right,
+        rgba(10,20,16,1) 0%,
+        rgba(10,20,16,.92) 30%,
+        rgba(10,20,16,0) 100%
+    );
+}
+
+.marquee::after{
+    right:0;
+
+    background:linear-gradient(
+        to left,
+        rgba(10,20,16,1) 0%,
+        rgba(10,20,16,.92) 30%,
+        rgba(10,20,16,0) 100%
+    );
+}
+
+.marquee-track{
+    width:max-content;
+
+    display:flex;
+
+    gap:.8rem;
+
+    will-change:transform;
+
+    animation:scrollLeft 35s linear infinite;
+}
+
+.reverse .marquee-track{
+    animation:scrollRight 35s linear infinite;
+}
+
+.tech-pill{
+    display:flex;
+    align-items:center;
+    gap:.85rem;
+    padding:.68rem 1.5rem;
+    border-radius:999px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    flex-shrink:0;
+    cursor:default;
+}
+
+.tech-icon{
+    font-size:1.3rem;
+    flex-shrink:0;
+}
+
+.tech-pill span{
+    color:rgba(255,255,255,.78);
+
+    font-weight:600;
+
+    letter-spacing:.02em;
+}
+
+/* Pause animation when hovering the entire marquee */
+.marquee:hover .marquee-track{
+    animation-play-state:paused;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce){
+
+    .marquee-track{
+        animation:none;
+        transform:translateX(0);
+    }
+
+}
+
+/* Infinite scrolling */
+
+@keyframes scrollLeft{
+
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+
+}
+
+@keyframes scrollRight{
+
+    from{
+        transform:translateX(-50%);
+    }
+
+    to{
+        transform:translateX(0);
+    }
+
+}

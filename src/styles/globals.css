@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+html,
+body{
+  overflow-x: hidden;
+}
+
+body{
+  background: #050b08;
+  font-family:"Inter",sans-serif;
+  color:var(--color-text);
+  line-height:1.7;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+
+img{
+  display:block;
+  max-width:100%;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+button,
+input,
+textarea{
+  font:inherit;
+}
+
+button{
+  cursor:pointer;
+  border:none;
+  background:none;
+}
+
+ul{
+  list-style:none;
+}

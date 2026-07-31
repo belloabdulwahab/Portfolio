@@ -1,0 +1,133 @@
+.about{
+    position:relative;
+    overflow:hidden;
+    padding:3.5rem 0;
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(26,207,122,.05),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom left,
+            rgba(26,207,122,.04),
+            transparent 40%
+        ),
+        #07100c;
+}
+
+.about::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(255,255,255,.015),
+            transparent 18%,
+            transparent 82%,
+            rgba(0,0,0,.08)
+        );
+
+    pointer-events:none;
+}
+
+.about-container{
+    position: relative;
+    z-index: 1;
+    display:grid;
+    grid-template-columns:460px 1fr;
+    gap:6rem;
+    align-items:center;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:32px;
+    display:block;
+    overflow: hidden;
+    box-shadow: 
+        0 25px 60px rgba(0,0,0,.35)
+        0 0 0 1px rgba(255,255,255,.05);
+    transition: var(--transition);
+}
+
+.section-eyebrow{
+    display:flex;
+    align-items:center;
+    gap:.9rem;
+    margin-bottom:1.5rem;
+}
+
+.section-eyebrow span{
+    width:34px;
+    height:1px;
+    background:var(--color-accent);
+    flex-shrink: 0;
+}
+
+.section-eyebrow p{
+    color:var(--color-accent);
+    font-size:.82rem;
+    font-weight:700;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    line-height: 1;
+}
+
+.about h2{
+    margin-bottom:2rem;
+    max-width:650px;
+    line-height: 1.08;
+    letter-spacing: -1.2px;
+}
+
+.about p{
+    margin-bottom:1.8rem;
+    line-height: 1.9;
+    max-width: 680px;
+    font-size: 1.03rem;
+    color:rgba(255,255,255,.68);
+}
+
+.about-features{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(220px,1fr));
+    gap:1.35rem 2.8rem;
+    margin-top: 2.8rem;
+}
+
+.about-features li{
+    display: flex;
+    align-items: flex-start;
+    gap: .9rem;
+    line-height: 1.6;
+    font-size: .98rem;
+    color: rgba(255,255,255,.82);
+} 
+
+.about-features span{
+    color: var(--color-accent);
+    font-size: 1.05rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+@media(max-width:900px){
+
+.about-container{
+grid-template-columns:1fr;
+gap:4rem;
+}
+
+.about-image{
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.about-features{
+grid-template-columns:1fr;
+}
+
+}
