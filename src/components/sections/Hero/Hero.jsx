@@ -1,6 +1,6 @@
 import { ArrowRight, Download } from "lucide-react";
 import "./Hero.css";
-import heroImage from "../../../assets/images/hero/hero-bg.jpeg";
+import heroImage from "../../../assets/images/hero/hero-bg5.jpg";
 
 function Hero() {
     return (
