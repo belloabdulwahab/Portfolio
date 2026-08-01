@@ -5,7 +5,10 @@ import "./ProjectCard.css";
 
 function ProjectCard({ project, index }) {
   return (
-    <motion.article 
+    <motion.a
+    href={project.live || project.github}
+    target="_blank"
+    rel="noopener noreferrer"
     className="project-card" 
     variants={cardReveal}
     >
@@ -48,7 +51,7 @@ function ProjectCard({ project, index }) {
 
       </div>
 
-    </motion.article>
+    </motion.a>
   );
 }
 
