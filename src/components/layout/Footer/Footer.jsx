@@ -1,5 +1,5 @@
 import { ArrowUp } from "lucide-react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import "./Footer.css";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -33,13 +33,16 @@ function Footer() {
                 <div className="footer-bottom">
                     <p>© {year} Bello Abdulwahab. All rights reserved.</p>
                     <div className="footer-socials">
-                        <a href="#">
+                        <a href="https://wa.me/2349070602504">
+                            <FaWhatsapp size={20} />
+                        </a>
+                        <a href="http://github.com/belloabdulwahab">
                             <FaGithub size={20} />
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/bello-abdulwahab-5600b0424">
                             <FaLinkedin size={20} />
                         </a>
-                        <a href="#">
+                        <a href="https://x.com/bao2dwrld_?s=21">
                             <FaXTwitter size={20} />
                         </a>
                     </div>

@@ -44,7 +44,7 @@ function ContactCard({
 
         <div className="contact-text">
           <span>{title}</span>
-          <p>{value}</p>
+          <a href={link}>{value}</a> 
         </div>
       </motion.div>
     );

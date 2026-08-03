@@ -209,36 +209,23 @@
 }
 
 .contact::before{
-
     content:"";
-
     position:absolute;
-
     width:550px;
     height:550px;
-
     left:-220px;
     bottom:-180px;
-
     background:var(--color-accent);
-
     opacity:.08;
-
     border-radius:50%;
-
     filter:blur(120px);
-
     pointer-events:none;
 }
 @media(max-width:900px){
-
-.contact-grid{
-
-grid-template-columns:1fr;
-
-}
-.form-row{
-    grid-template-columns:1fr;
-}
-
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+    .form-row{
+        grid-template-columns:1fr;
+    }
 }
