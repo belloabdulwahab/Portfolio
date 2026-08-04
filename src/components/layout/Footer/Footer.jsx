@@ -2,7 +2,7 @@ import { ArrowUp } from "lucide-react";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import "./Footer.css";
 import { FaXTwitter } from "react-icons/fa6";
-
+import logo from "../../../assets/logos/logo.png";
 
 function Footer() {
     const year = new Date().getFullYear();
@@ -14,7 +14,7 @@ function Footer() {
                 <div className="footer-top">
                     <div className="footer-brand">
                         <div className="footer-logo">
-                            <span>BA</span>
+                            <img src={logo} alt="Bello Abdulwahab Logo" className="footer-logo-image" />
                             <h3>Abdulwahab.</h3>
                         </div>
                         <p>Building the web , one Business at a time.</p>

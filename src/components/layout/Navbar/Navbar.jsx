@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import navigation from "../../../data/navigation";
 import "./Navbar.css";
+import logo from "../../../assets/logos/logo.png";
+
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
@@ -18,7 +20,7 @@ function Navbar() {
         <header className={`navbar ${scrolled ? "scrolled" : ""}`}>
             <div className="container navbar-container">
                 <a href="/" className="logo">
-                    <span className="logo-badge">BA</span>
+                    <img src={logo} alt="Bello Abdulwahab Logo" className="logo-image" />
                     <span>Abdulwahab<span className="dot">.</span></span>
                 </a> 
 

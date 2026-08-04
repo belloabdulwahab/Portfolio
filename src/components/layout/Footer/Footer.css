@@ -30,21 +30,11 @@
     margin-bottom:.85rem;
 }
 
-.footer-logo span{
-
-    width:40px;
-    height:40px;
-
-    display:grid;
-    place-items:center;
-
-    border-radius:12px;
-
-    background:var(--color-accent);
-
-    color:#fff;
-
-    font-weight:700;
+.footer-logo-image{
+    width:42px;
+    height:42px;
+    object-fit:contain;
+    flex-shrink:0;
 }
 
 .footer-logo h3{

@@ -31,19 +31,11 @@
   color: #fff;
 }
 
-.logo-badge{
-  width: 40px;
-  height: 40px;
-  display: flex;
-  place-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  background: #19C37D;
-  font-size: .9rem;
-  font-weight: 700;
-  line-height: 1;
-  color: white;
-  flex-shrink: 0;
+.logo-image{
+    width:42px;
+    height:42px;
+    object-fit:contain;
+    flex-shrink:0;
 }
 
 .dot{
