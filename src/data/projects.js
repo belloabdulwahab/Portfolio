@@ -1,4 +1,4 @@
-import dashboard from "../assets/images/projects/mryusuf-dashboard.png";
+import dashboard from "../assets/images/projects/mryusuf2.png";
 
 const projects = [
   {
@@ -12,6 +12,7 @@ const projects = [
       "PHP",
       "HTML",
       "CSS",
+      "BootStrap",
       "MySQL",
       "JavaScript",
       "Paystack",
