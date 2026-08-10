@@ -38,14 +38,15 @@
 }
 
 .footer-logo h3{
-
     margin:0;
 }
 
+.dot{
+  color: #19C37D;
+}
+
 .footer-brand p{
-
     color:var(--color-text-muted);
-
     max-width:320px;
 }
 

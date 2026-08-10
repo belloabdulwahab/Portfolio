@@ -30,7 +30,7 @@ const contact = [
     icon: FaLinkedin,
     title: "LinkedIn",
     value: "linkedin.com/in/yourusername",
-    link: "https://www.linkedin.com/in/bello-abdulwahab-5600b0424",
+    link: "https://www.linkedin.com/in/bello-abdulwahab",
   },
   {
     icon: FaXTwitter,

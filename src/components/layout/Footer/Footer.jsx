@@ -15,7 +15,7 @@ function Footer() {
                     <div className="footer-brand">
                         <div className="footer-logo">
                             <img src={logo} alt="Bello Abdulwahab Logo" className="footer-logo-image" />
-                            <h3>Abdulwahab.</h3>
+                            <h3>Abdulwahab<span className="dot">.</span></h3>
                         </div>
                         <p>Building the web , one Business at a time.</p>
                     </div>
@@ -39,7 +39,7 @@ function Footer() {
                         <a href="http://github.com/belloabdulwahab">
                             <FaGithub size={20} />
                         </a>
-                        <a href="https://www.linkedin.com/in/bello-abdulwahab-5600b0424">
+                        <a href="https://www.linkedin.com/in/bello-abdulwahab">
                             <FaLinkedin size={20} />
                         </a>
                         <a href="https://x.com/bao2dwrld_?s=21">
