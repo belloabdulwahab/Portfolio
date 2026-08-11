@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeSoft, fadeUp, scaleReveal, staggerContainer } from "../../../animations/variants";
-import profile from "../../../assets/images/profile/profile.jpeg";
+import profile from "../../../assets/images/profile/abdulwahab.png";
 import "./About.css";
 
 function About() {
@@ -11,7 +11,7 @@ function About() {
       variants={staggerContainer}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }} >
+      viewport={{ once: true, amount: 0.2 }} > 
 
         <motion.div className="about-image" variants={scaleReveal}>
           <img src={profile} alt="Bello Abdulwahab" />
@@ -29,7 +29,7 @@ function About() {
           </motion.h2>
 
           <motion.p variants={fadeSoft}>
-            I'm Bello Abdulwahab, a freelance web developer based in Lagos, Nigeria. I
+            I'm <strong>BELLO ABDULWAHAB</strong>, a freelance web developer based in Lagos, Nigeria. I
             build professional websites and custom web applications that help businesses
             establish credibility, attract customers, and grow online.
           </motion.p>

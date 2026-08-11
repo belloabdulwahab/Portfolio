@@ -23,7 +23,7 @@ function Footer() {
                     <nav className="footer-nav">
                         <a href="#about">About</a>
                         <a href="#services">Services</a>
-                        <a href="#projects">Work</a>
+                        <a href="#projects">Projects</a>
                         <a href="#contact">Contact</a>
                     </nav>
                     <a href="#hero" className="footer-top-btn">
