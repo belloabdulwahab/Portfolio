@@ -260,3 +260,37 @@
         grid-template-columns:1fr;
     }
 }
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 5rem 0;
+    }
+
+    .contact-grid {
+        gap: 1.25rem;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+        min-width: 0;
+        padding: 1.25rem;
+        border-radius: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        min-width: 0;
+    }
+
+    .contact-cta {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 1.25rem;
+        padding: 1.25rem;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+    }
+}
