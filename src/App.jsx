@@ -18,6 +18,8 @@ function App() {
   }}
 >
   Width: {window.innerWidth}
+    Mobile ≤900px:{" "}
+  {window.matchMedia("(max-width: 900px)").matches ? "YES" : "NO"}
 </div>
 </>
   );
