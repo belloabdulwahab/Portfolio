@@ -21,10 +21,12 @@ function App() {
   Mobile ≤900px:{" "}
   {window.matchMedia("(max-width: 900px)").matches ? "YES" : "NO"}
   <br />
-  Nav display:{" "}
-  {document.querySelector(".nav-links")
-    ? window.getComputedStyle(document.querySelector(".nav-links")).display
-    : "NOT FOUND"}
+  Navbar elements: {document.querySelectorAll("nav").length}
+  <br />
+  Classes:{" "}
+  {Array.from(document.querySelectorAll("nav"))
+    .map((nav) => nav.className)
+    .join(" | ") || "NONE"}
 </div>
 </>
 );
