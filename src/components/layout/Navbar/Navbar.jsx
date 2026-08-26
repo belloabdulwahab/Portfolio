@@ -17,7 +17,7 @@ function Navbar() {
     }, []);
 
     return (
-        <header className={`navbar ${scrolled ? "scrolled" : ""}`}>
+        <header className={`navbar ${scrolled ? "scrolled" : ""}`} >
             <div className="container navbar-container">
                 <a href="/" className="logo">
                     <img src={logo} alt="Bello Abdulwahab Logo" className="logo-image" />
