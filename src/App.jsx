@@ -4,7 +4,6 @@ function App() {
   return (
     <>
     <AppRouter />
-
     <div
   style={{
     position: "fixed",
@@ -18,11 +17,17 @@ function App() {
   }}
 >
   Width: {window.innerWidth}
-    Mobile ≤900px:{" "}
+  <br />
+  Mobile ≤900px:{" "}
   {window.matchMedia("(max-width: 900px)").matches ? "YES" : "NO"}
+  <br />
+  Nav display:{" "}
+  {document.querySelector(".nav-links")
+    ? window.getComputedStyle(document.querySelector(".nav-links")).display
+    : "NOT FOUND"}
 </div>
 </>
-  );
+);
 }
 
 
